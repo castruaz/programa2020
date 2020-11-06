@@ -1,0 +1,31 @@
+// Arreglo al cubo
+
+Funcion Imprime(X)
+	Definir i Como Entero
+	Para i=1 Hasta 12 Hacer
+		Escribir X[i]
+	FinPara
+	Escribir ""
+FinFuncion
+
+
+Algoritmo ImprimeArreglo
+	Definir A,B,i Como Entero
+	Dimension A[12], B[12]
+	
+	Para i=1 Hasta 12 Hacer
+		A[i] = Aleatorio(1,100)
+	FinPara
+	
+	Para i=12 Hasta 1 Con Paso -1 Hacer
+		B[i] = A[(12-i)+1]
+	FinPara
+	
+	
+	Escribir "Elementos del Arreglo A"
+	Imprime(A)
+	
+	Escribir "Elementos del Arreglo B"
+	Imprime(B)
+	
+FinAlgoritmo

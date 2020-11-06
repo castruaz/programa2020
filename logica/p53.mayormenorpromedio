@@ -1,0 +1,33 @@
+// Calcula el mayor, el menor y el promedio de n numeros
+// Carlos Castaneda Ramirez
+// 14 de Octubre de 2020
+
+Algoritmo mayormenorpromedio
+	Definir resp Como Caracter
+	Definir n, i, c, s, may, men, prom Como Entero
+	
+	Repetir
+		Limpiar Pantalla
+		Escribir "Calcula el mayor, el menor y el promedio de n numeros"
+		may=-9999; men=9999;
+		Repetir
+			Escribir "Dame un numero "; Leer n
+			c = c + 1
+			s = s + n
+			Si n > may Entonces
+				may = n
+			FinSi
+			Si n < men Entonces
+				men = n
+			FinSi
+		Hasta Que n=0
+		Escribir "El mayor de los numeros es : ", may
+		Escribir "El menor de los numeros es : ", men 
+		p = s / (c - 1)
+		Escribir "El promedio de los numeros es: ", p
+		Escribir "Se introdujeron              : ", c - 1
+		
+		Escribir "Deseas Continuar (S/N)"; Leer resp
+	Hasta Que Mayusculas(resp)="N" 
+	Escribir "Proceso terminado ........"
+FinAlgoritmo

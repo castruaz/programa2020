@@ -1,0 +1,26 @@
+// Numeros de 3 en 3 descendente hasta n, repitindo hasta que el usuario decida
+// Carlos Castaneda Ramirez
+// 14 de Octubre de 2020
+
+Algoritmo Numerosde3en3
+	Definir resp Como Caracter
+	Definir n, i,s Como Entero
+	
+	Repetir
+		Limpiar Pantalla
+		Escribir "Programa que imprime numeros de 100 a n de 3 en 3 descendente"
+		Escribir "Hasta donde deseas los numeros"; Leer n
+		Si n<100 Entonces
+			Para i=100 Hasta n Con Paso -3 Hacer
+				Escribir Sin Saltar  i, " "
+				s = s + i
+			FinPara
+		SiNo
+			Escribir "Numero invalido"
+		FinSi
+		Escribir ""
+		Escribir "La suma de los numeros es: ", s
+		Escribir "Deseas Continuar (S/N)"; Leer resp
+	Hasta Que Mayusculas(resp)="N" 
+	
+FinAlgoritmo

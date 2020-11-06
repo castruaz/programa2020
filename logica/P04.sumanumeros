@@ -1,0 +1,27 @@
+// Calcula la suma y el promedio de 3 numeros
+// Carlos Castaneda Ramirez
+// 31 de Agoso de 2020
+
+Algoritmo sumanumeros
+	// Definir variables
+	Definir cal1, cal2, cal3 Como Real
+	Definir suma, promedio Como Real
+	
+	// Entrada de datos
+	Escribir "Dame calificacion 1" ; Leer cal1
+	Escribir "Dame calificacion 2" ; Leer cal2
+	Escribir "Dame calificacion 3" ; Leer cal3
+	
+	// Proceso
+	suma = cal1 + cal2 + cal3 	
+	promedio = suma / 3
+	
+	// Salida
+	Escribir "La suma es ", suma
+	Escribir "El promedio es ", promedio
+	
+	// Escribir "Las calificaciones: ", cal1, cal2, cal3
+	// Escribir "Suman    : ", cal1 + cal2 + cal3
+	// Escribir "Promedian: ", (cal1 + cal2 + cal3) / 3
+	
+FinAlgoritmo

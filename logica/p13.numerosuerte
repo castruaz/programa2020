@@ -1,0 +1,27 @@
+// Tarea 4 - Ejemplo 13 .  Calcular numero de la suerte
+// Carlos Castaneda Ramirez
+// 31 Ago 2020  -  5678
+
+// 1 9 7 1
+
+Algoritmo descomponer
+	Definir dia, mes, año como entero 
+	Definir num Como Entero
+	Definir millares, centenas, decenas, unidades Como Entero
+	
+	Escribir "Dia"; Leer dia
+	Escribir "Mes"; Leer mes
+	Escribir "Año"; Leer año
+	
+	num = dia + mes + año // 1971
+	
+	millares = trunc( num / 1000 )  // trunc elimina los decimales   1.971   1 
+	centenas =  trunc( (num - (millares * 1000) ) / 100)    
+	decenas  =  trunc( ( (num - (millares*1000)) - (centenas*100)) / 10 )
+	unidades =   ((num - (millares*1000)) - (centenas*100)) - decenas * 10
+	
+	Escribir "Tu numero de la suerte es ", millares + centenas + decenas + unidades
+	 
+	Escribir "Ahora ve a comprar un boleto que contenga este numero y ya no tendras que estudiar"
+	
+FinAlgoritmo

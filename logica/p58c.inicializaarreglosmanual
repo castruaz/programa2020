@@ -1,0 +1,30 @@
+// Inicializa un arreglo de forma manual
+// Carlos Castaneda R
+// 21 de Octubre de 2020
+
+Algoritmo InicializarArreglosManual
+	Definir nums Como Entero
+	Dimension nums[5]
+	Definir i Como Entero
+	
+	// Inicializar el arreglo de forma manual
+	nums[1]=5
+	nums[2]=10
+	nums[3]=15
+	nums[4]=20
+	nums[5]=25
+	
+	// Imprimir algunos valores específicos del arreglo
+	Escribir "El valor del element 1 y 5 del arreglo: "
+	Escribir nums[1]
+	Escribir nums[5]
+	
+	// Imprimir todos los elementos del arreglo
+	Escribir "Los elementos del arreglo son: "
+	Para i=1 Hasta 5 Con Paso  1 Hacer
+		Escribir nums[i]
+	FinPara
+	
+	Escribir "Proceso terminado "
+	
+FinAlgoritmo

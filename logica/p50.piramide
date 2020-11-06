@@ -1,0 +1,22 @@
+// Imprime una piramide de asteriscos de n reglones
+// Carlos Castaneda R
+// 12 Octubre 2020
+
+Algoritmo Tablas
+	Definir n, i, j Como Entero
+	Definir resp Como Caracter
+	
+	Repetir
+		Limpiar Pantalla
+		Escribir "Imprime una piramide de asteriscos de n reglones"
+		Escribir "De cuantos renglones quieres la priamide"; Leer n
+		Para i=1 Hasta n Con Paso 1 Hacer
+			Para j=1 Hasta i Con Paso 1 Hacer
+				Escribir Sin Saltar "&"
+			FinPara
+			Escribir ""
+		FinPara
+		Escribir "Deseas repetir el proceso (S/N)"; Leer resp
+	Hasta Que Mayusculas(resp)="N" 
+	
+FinAlgoritmo

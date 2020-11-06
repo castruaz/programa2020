@@ -1,0 +1,24 @@
+// Tarea 4 - Ejemplo 11 . Calculo del tiempo
+// Carlos Castaneda Ramirez
+// 2 de septiembre 2020
+
+Algoritmo calculo_tiempo
+	definir horas como entero
+	definir dias, minutos, segundos como entero
+	
+	escribir "Programa que convierte horas a dias, minutos y segundos"
+	escribir "Dame las horas "
+	leer horas
+	
+	dias = horas / 24
+	minutos = horas * 60
+	segundos = minutos * 60
+	
+	escribir "Horas    : ", horas
+	escribir "Dias     : ", dias
+	escribir "Minutos  : ", minutos
+	escribir "Segundos : ", segundos 
+	
+	escribir "Gracias otra vez, te haz ganado 100 pavos para el fornite"
+	
+FinAlgoritmo

@@ -1,0 +1,57 @@
+// Algoritmo que convierte centigrados a farenheit y viceversa
+// Carlos Castaneda Ramirez
+// 28 de Septiembre 2020
+
+// Esta funcion muestra un menu y me regresa lo que el usuario eligio
+Funcion op <- Menu()
+	Definir op Como Entero
+	Escribir "-----------------------------------------------------"
+	Escribir "[ 1 ] Convertir de Farenheit a Centigrados           "
+	Escribir "[ 2 ] Convertir de Centigrados a Farenheit           "
+	Escribir "-----------------------------------------------------"
+	Escribir "Elije ? "
+	Leer op
+FinFuncion
+
+// Recibe una temperatura en Farenheit y la convierte a Centigrados
+Funcion r <- Centigrados(t)
+	Definir r Como Real
+	r = ( t - 32 ) * 5 / 9
+FinFuncion
+
+// Recibe una temperatura en Centigrados y la convierte a Farenheit
+Funcion r <- Farenheit(t)
+	Definir r Como Real
+	r = ( t * 9 / 5 ) + 32
+FinFuncion
+
+Algoritmo temperaturas_funciones
+	Definir r Como Entero
+	Definir temp, res Como Real
+	
+	op = Menu()
+	
+	Segun op Hacer
+		1: 	Escribir "Convirtiendo Farenheit a Centigrados"
+			Escribir "Dame la temperatura en Farenheit "
+			Leer temp
+			res = Centigrados(temp)
+			Escribir "La temperatura en Centigrados es", res
+						
+		2: 	Escribir "Convirtiendo Centigrados a Farenheit"
+			Escribir "Dame la temperatura en Centirados"
+			Leer temp
+			res = Farenheit(temp)
+			Escribir "La temperatura en FArenheit es", res
+			
+		De Otro Modo: Escribir "Opcion Invalida"
+	FinSegun
+FinAlgoritmo
+
+ 
+
+
+
+
+
+

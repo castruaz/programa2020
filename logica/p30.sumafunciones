@@ -1,0 +1,28 @@
+// Algortimo que suma 2 numeros usando funciones
+// Carlos Castaneda
+// 28 de Septiembre
+
+// Esta funcion imprime una linea de guiones
+Funcion Linea()
+	Escribir "-----------------------------------------------------------------"
+FinFuncion
+
+// Esta funcion recibe 2 numero enteros y me regresa la suma de ellos
+Funcion s <- Suma(num1, num2)
+	Definir s Como Entero
+	s = num1 + num2
+FinFuncion
+
+Algoritmo suma_funciones
+	Definir n1, n2, resp Como Entero
+	Linea()
+	Escribir "Programa que suma 2 numeros usando funciones"
+	Linea()
+	Escribir "Dame el primer numero"
+	Leer n1
+	Escribir "Dame el segundo numero"
+	Leer n2
+	resp = Suma(n1,n2)
+	Escribir "El resultado de la suma es ", resp	
+FinAlgoritmo
+	

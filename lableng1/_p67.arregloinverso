@@ -1,0 +1,44 @@
+// Arreglos al cubo
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+void imprime(float X[]) {
+	int i;
+	for(i=0; i<=9; i++) {
+		printf("%.2f ",X[i]);
+	}
+	printf("\n\n");
+}
+
+void aleatorio(float X[]) {
+	int i;
+	for(i=0; i<=9;i++) {
+		X[i] = rand() % 100;
+	}
+}
+
+
+main() {
+	float A[10], C[10];
+	int i;
+	
+	aleatorio(A);
+ 
+	
+	for(i=0; i<=9;i++) {
+		C[i] = A[(9-i)];
+	}
+	
+	
+	printf("Contenido del arreglo A\n");
+	imprime(A);
+	 
+	printf("Contenido del arreglo C\n");
+	imprime(C);
+	
+	
+	printf("\nProceso terminado ....\n");
+	
+}

@@ -1,0 +1,18 @@
+// Tarea 4 - Ejemplo 7 - Hipotenusa de un Triangulo
+// Carlos Castaneda Ramirez
+// 2 de septiembre 2020
+
+Algoritmo calculo_hipotenusa
+	Definir longitudlado1, longitudlado2 Como Real
+	Definir hipotenusa Como Real
+	
+	Escribir "Dame la longitud del lado 1"
+	Leer longitudlado1
+	Escribir "Dame la longitud del lado 2"
+	Leer longitudlado2
+		
+	hipotenusa = rc( (longitudlado1 * longitudlado1) + (longitudlado2 * longitudlado2) )
+	
+	Escribir "La hipotenusa es ", hipotenusa 
+		
+FinAlgoritmo

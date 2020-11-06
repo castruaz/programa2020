@@ -1,0 +1,24 @@
+// Calcula el factoria de un numero
+// Carlos Castaneda Ramirez
+// 14 de Octubre de 2020
+
+Algoritmo factorial
+	Definir resp Como Caracter
+	Definir n, i Como Entero
+	Definir f Como Real
+	
+	Repetir
+		Limpiar Pantalla
+		Escribir "Calcula el factorial de un numero"
+		Escribir "Dame un numero ? "; Leer n
+		f=1
+		Para i=1 Hasta n Con Paso 1 Hacer
+			f = f * i
+			Escribir  Sin Saltar i, " * "
+		FinPara
+		Escribir ""
+		Escribir "El factorial es " , f
+		Escribir "Deseas Continuar (S/N)"; Leer resp
+	Hasta Que Mayusculas(resp)="N" 
+	Escribir "Proceso terminado ........"
+FinAlgoritmo

@@ -1,0 +1,43 @@
+// Arreglos aleatorios
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void imprime(int X[]) {
+	int i;
+	for(i=0; i<=9; i++) {
+		printf("%d ",X[i]);
+	}
+	printf("\n\n");
+}
+
+void aleatorio(int X[]) {
+	int i;
+	for(i=0; i<=9;i++) {
+		X[i] = rand() % 100;
+	}
+}
+
+
+main() {
+	int A[10], B[10], C[10], i;
+	
+	aleatorio(A);
+	aleatorio(B);
+	
+	for(i=0; i<=9;i++) {
+		C[i] = A[i] + B[i];
+	}
+	
+	
+	printf("Contenido del arreglo A\n");
+	imprime(A);
+	printf("Contenido del arreglo B\n");
+	imprime(B);
+	printf("Contenido del arreglo C\n");
+	imprime(C);
+	
+	
+	printf("\nProceso terminado ....\n");
+	
+}

@@ -1,0 +1,21 @@
+// Tarea 4 - Ejemplo 8 . Calcular Angulo
+// Carlos Castaneda Ramirez
+// 2 de septiembre 2020
+
+Algoritmo calcular_angulo
+	Definir angulo1, angulo2, angulo3 Como Real
+	
+	Escribir "Calcular el 3er angulo de un triangulo, dados los dos primeros"
+	Escribir "Dame el primer angulo "
+	Leer angulo1
+	Escribir "Dame el segundo angulo "
+	Leer angulo2
+	
+	angulo3 = 180 - ( angulo1 + angulo2 )
+	
+	Escribir "Para un triangulo con un angulo de ", angulo1, " y otro de ", angulo2
+	Escribir "El tercer angulo resulta en ", angulo3
+	
+	Escribir "Gracias por usar mi super programa"
+		
+FinAlgoritmo

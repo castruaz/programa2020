@@ -1,0 +1,19 @@
+// Convierte un rango de temperaturas de C a F
+// Carlos Castaneda R
+// 7 de Octubre 2020
+
+Algoritmo temperaturas
+	Definir i, f, c, r Como Real
+	
+	Escribir "Convierte un rango de temperaturas de C a F"
+	Escribir "Valor inicial "; Leer i
+	Escribir "Valor final   "; Leer f	
+	c = i
+	Escribir "Centigrados   Faranheit"
+	Mientras c <= f Hacer
+		r = ( c * 9 / 5 ) + 32
+		Escribir c, "            ", r
+		c = c + 1
+	FinMientras
+	
+FinAlgoritmo

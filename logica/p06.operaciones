@@ -1,0 +1,27 @@
+// Realiza operaciones basicas sobre 2 numeros
+// Carlos Castañeda Ramirez
+// 31 de Agosto de 2020
+
+Algoritmo operaciones
+	Definir num1, num2 Como Real
+	Definir suma, resta, multiplicacion, division, residuo, potencia Como Real
+	
+	Escribir "Dame el primer numero  "; Leer num1
+	Escribir "Dame el segundo numero "; Leer num2
+	
+	suma = num1 + num2
+	resta = num1 - num2
+	multiplicacion = num1 * num2
+	division = num1 / num2
+	residuo = num1 mod num2
+	potencia = num1 ^ num2
+	
+	Escribir "Los numeros ", num1, " y ", num2
+	Escribir "Suma          : ", suma
+	Escribir "Resta         : ", resta
+	Escribir "Multiplicación: ", multiplicacion
+	Escribir "División      : ", division	
+	Escribir "Residuo       : ", residuo
+	Escribir "Potenicia     : ", potencia
+	
+FinAlgoritmo

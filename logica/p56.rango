@@ -1,0 +1,25 @@
+// Imprime los valores entre un rango de numeros 
+// Carlos Castaneda Ramirez
+// 14 de Octubre de 2020
+
+Algoritmo conjeturacollatz
+	Definir resp Como Caracter
+	Definir n,m, i Como Entero
+	 
+	Repetir
+		Limpiar Pantalla
+		Escribir "Imprime los valores entre n y m"
+		Escribir "Dame valor Inicial "; Leer m 		
+		Escribir "Dame valor Final   "; Leer n 
+		Si m>n Entonces
+			Escribir "Rango de valores incorrecto"
+		SiNo
+			Para i=m Hasta n Con Paso  1 Hacer
+				Escribir Sin Saltar i, " "
+			FinPara
+		FinSi
+		Escribir ""
+		Escribir "Deseas Continuar (S/N)"; Leer resp
+	Hasta Que Mayusculas(resp)="N" 
+	Escribir "Proceso terminado ........"
+FinAlgoritmo

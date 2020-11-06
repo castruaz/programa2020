@@ -1,0 +1,25 @@
+// Imprime los numeros pares de forma descendente y tambien su suma
+// Carlos Castaneda R
+// 7 de Octubre de 2020
+// 100 98 96 94 92 90
+
+Algoritmo Impares
+	Definir r Como Caracter
+	Definir c, n, s Como Entero
+	
+	Repetir
+		Borrar Pantalla
+		Escribir "Imprime los numeros impares de forma descendente y tambien su suma"
+		Escribir "Hasta donde quieres los pares ? "; Leer n
+		c=100
+		Mientras c>=n  Hacer
+			Escribir c
+			s = s + c
+			c = c - 2
+		FinMientras
+		Escribir "La suma de los impares es ", s
+		Escribir "Deseas repetir (S/N)?" ; Leer r
+		r=Mayusculas(r)
+	Hasta Que r="N"
+	Escribir "Fin del Proceso ..."
+FinAlgoritmo

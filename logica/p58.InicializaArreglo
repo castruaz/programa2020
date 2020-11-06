@@ -1,0 +1,30 @@
+// Inicializa un arreglo de numeros de forma manual y luego los imprime
+// Carlos Castañeda Ramírez
+// 26 de Octubre de 2020
+
+Algoritmo InicializaArregloManual
+	// Definir y dimensionar un arreglo
+	Definir nums, i Como Entero
+	Dimension nums[5]
+	
+	// Asignar valore al arreglo de manera manual
+	nums[1]=20
+	nums[2]=5
+	nums[3]=10
+	nums[4]=30
+	nums[5]=25
+	
+	// Imprimir el primero y el ultimo elemento del arreglo
+	Escribir "Imprimir el elemento 1 y elemento 5 del arreglo"
+	Escribir nums[1]
+	Escribir nums[5]
+	
+	// Imprimir todos los elemntos del arreglo con ciclo
+	Escribir "Los elementos del arreglo son: "
+	Para i=1 Hasta 5 Con Paso 1 Hacer
+		Escribir nums[i]
+	FinPara
+	
+	Escribir "Proceso terminado"
+	
+FinAlgoritmo

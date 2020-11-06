@@ -1,0 +1,31 @@
+// Decide si una estudiante es aceptada segun su edad y 3 calificaciones
+// Carlos Castaneda
+// 21 de Septiembre de 2020
+
+Algoritmo estudiante
+	Definir nombre Como Caracter
+	Definir edad Como Entero
+	Definir c1,c2,c3,prom Como Real
+	
+	Escribir "----------------------------------------------------"
+	Escribir "Universidad Kitty Kat SA"
+	Escribir "Escuela para mujeres mayores de 21 con buen promedio"
+	Escribir "----------------------------------------------------"
+	Escribir "Nombre de la estudiante : ";Leer nombre
+	Escribir "Edad            :"; Leer edad
+	
+	Si edad>=21 Entonces
+		Escribir "Calificacion 1   :"; Leer c1
+		Escribir "Calificacion 2   :"; Leer c2
+		Escribir "Calificacion 3   :"; Leer c3
+		prom=(c1+c2+c3)/3
+		Si prom>=8 Y prom<=10 Entonces
+			Escribir nombre, ": Promedio: ", prom, " ACEPTADA - Cumples con el requsito de edad y promedio solicitados"
+		SiNo
+			Escribir nombre, ": NO ES ACEPTADA - Tienes la edad, pero no tienes el promedio necesario"
+		FinSi
+	SiNo
+		Escribir nombre, ": NO ES ACEPTADA - Solo mayores de 21 años"
+	FinSi
+		
+FinAlgoritmo

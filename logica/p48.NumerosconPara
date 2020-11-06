@@ -1,0 +1,29 @@
+// Imprime numeros de 1 a n o de n a 1, segun lo decida el usuario
+// Carlos Castaneda R
+// 12 Octubre 2020
+
+Algoritmo NumerosConPara
+	Definir n, i Como Entero
+	Definir op, resp Como Caracter
+	
+	Repetir
+		Limpiar Pantalla
+		Escribir "Imprime numeros de 1 a n o de n a 1, segun lo decida el usuario"
+		Escribir "Numeros (A)scendente 1 a n, (D)escendente n a 1"; Leer op
+		Escribir "Dame el limite "; Leer n
+		Segun Mayusculas(op) Hacer
+			"A": Escribir "Imprimiendo numeros Ascendente "
+				Para i=1 Hasta n Con Paso 1 Hacer
+					Escribir i
+				FinPara
+			"D": Escribir "Imprimiendo numeros Descendente"
+				Para i=n Hasta 1 Con Paso -1 Hacer
+					Escribir i
+				FinPara	
+			De Otro Modo:
+				Escribir "Opción inválida"
+		FinSegun
+		Escribir "Quieres repetir el proceso (S/N) ?"; Leer resp
+	Hasta Que Mayusculas(resp)="N" 
+	Escribir "Proceso terminado ...."
+FinAlgoritmo

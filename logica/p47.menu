@@ -1,0 +1,82 @@
+// Presenta un menu de opciones 
+// Carlos Castaneda
+// 7 de Octubre de 2020
+
+SubProceso Impares
+	Definir r Como Caracter
+	Definir c, n, s Como Entero
+	Repetir
+		Borrar Pantalla
+		Escribir "Imprime los numeros impares de forma ascendente y tambien su suma"
+		Escribir "Hasta donde quieres los impares ? "; Leer n
+		c=1
+		Mientras c<=n Hacer
+			Escribir c
+			s = s + c
+			c = c + 2
+		FinMientras
+		Escribir "La suma de los impares es ", s
+		Escribir "Deseas repetir (S/N)?" ; Leer r
+		r=Mayusculas(r)
+	Hasta Que r="N"
+	Escribir "Fin del Proceso ..."
+FinSubProceso
+
+SubProceso  Pares
+	Definir r Como Caracter
+	Definir c, n, s Como Entero
+	
+	Repetir
+		Borrar Pantalla
+		Escribir "Imprime los numeros impares de forma descendente y tambien su suma"
+		Escribir "Hasta donde quieres los pares ? "; Leer n
+		c=100
+		Mientras c>=n  Hacer
+			Escribir c
+			s = s + c
+			c = c - 2
+		FinMientras
+		Escribir "La suma de los impares es ", s
+		Escribir "Deseas repetir (S/N)?" ; Leer r
+		r=Mayusculas(r)
+	Hasta Que r="N"
+	Escribir "Fin del Proceso ..."
+FinSubProceso
+
+SubProceso Promedio
+	Definir n, s, p, c Como Entero
+	
+	Escribir "Calcula el promedio de n numeros hasta que se introduce 0"
+	Repetir
+		Escribir "Dame un numero ?"; Leer n
+		s = s + n
+		c = c + 1
+	Hasta Que n = 0
+	Escribir "Se introdujeron :", c-1
+	Escribir "La suma es      :", s
+	p = s / (c-1)
+	Escribir "El promedio     :", p
+FinSubProceso
+
+Algoritmo menu
+	Definir op Como Entero
+	
+	Repetir 
+		Limpiar Pantalla
+		Escribir "Números impares ascendente ........... [ 1 ]"
+		Escribir "Números pares descendente .............[ 2 ]"
+		Escribir "Promedio de números ...................[ 3 ]"
+		Escribir "Salir del proceso .....................[ 9 ]" 
+		Escribir "Elije ?"; Leer op
+		 
+		Segun op Hacer
+			1 : Impares
+			2 : Pares
+			3 : Promedio
+			9 : Escribir " Adios "
+			De Otro Modo: Escribir "opcion invalida"
+		FinSegun
+	Hasta Que op=9
+	Escribir " Proceso terminado, gracias por utilizar nuestro sistema "
+	
+FinAlgoritmo

@@ -1,0 +1,26 @@
+// Lee los nombres de maximo 25 personas y los muestra
+// Carlos Castaneda R
+// 28 de Octubre de 2020
+
+Algoritmo Nombres
+	Definir noms Como Caracter
+	Dimension noms[25]
+	Definir i, n Como Entero
+	
+	noms[1]="El profe Carlos"
+	
+	Escribir "Cuantos nombres vas introducir"; Leer n
+	Si n<24 Entonces
+		Para i=2 Hasta n Hacer
+			Escribir "Dame el nombre ", i
+			Leer noms[i]
+		FinPara
+		Para i=1 Hasta n
+			Escribir noms[i]
+		FinPara
+	SiNo
+		Escribir "Solo puedo tener 25 nombres"
+	FinSi
+	
+	
+FinAlgoritmo

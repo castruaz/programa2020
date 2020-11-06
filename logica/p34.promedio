@@ -1,0 +1,22 @@
+// Calcula el promedio de 3 numeros usando una funcion 
+// Carlos Castaneda Ramirez
+// 30 de septiembre de 2020
+
+Funcion p <- Promedio(n1,n2,n3)
+	Definir p Como Real
+	p = (n1+n2+n3) / 3 
+FinFuncion
+
+Algoritmo calcular_menor
+	Definir n1, n2, n3 Como Real
+	Definir p Como Real
+	
+	Escribir "Calcula el promedio de 3 numeros usando una Funcion"
+	Escribir "Numero 1 : "; Leer n1
+	Escribir "Numero 2 : "; Leer n2
+	Escribir "Numero 3 : "; Leer n3
+	
+	p = Promedio(n1, n2, n3)
+	Escribir "El promedio es  ", p
+	
+FinAlgoritmo

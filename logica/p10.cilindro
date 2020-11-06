@@ -1,0 +1,23 @@
+// Tarea 4 - Ejemplo 10 . Volumen cilindro
+// Carlos Castaneda Ramirez
+// 2 de septiembre 2020
+
+Algoritmo volumen_cilindro
+	definir radio, altura como real
+	definir volumen como real
+	
+	escribir "Programa que calcula el volumen de un cilindro"
+	escribir "Dame el radio "
+	leer radio
+	escribir "Dame la altura "
+	leer altura
+	
+	volumen = pi * ( radio * radio ) * altura
+	
+	escribir "Para un cilindro de ", radio, " de radio "
+	escribir "y ", altura , " de altura "
+	escribir "su volumen es ", volumen
+	
+	escribir " gracias nuevamente ya eres mi fan no 1"
+	
+FinAlgoritmo

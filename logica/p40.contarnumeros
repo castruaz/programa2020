@@ -1,0 +1,33 @@
+// Intruoducir n numeros, sumar pos, sumar nega, sumar ceros
+// Carlos Castaneda
+// 5 octubre de 2020
+
+Algoritmo ContarNumeros
+	Definir n, c, s Como Entero
+	Definir cp, cn, cz Como Entero
+	
+	Repetir
+		Escribir "Dame un numero"
+		Leer n
+		Si n<>999 Entonces
+			c = c + 1
+			s = s + n
+			Si n>0 Entonces
+				cp = cp + 1
+			FinSi
+			Si n<0 Entonces
+				cn = cn + 1
+			FinSi
+			Si n=0 Entonces
+				cz = cz + 1
+			FinSi
+		FinSi
+	Hasta Que n=999
+	Escribir "Se introdujero: ", c
+	Escribir "Positivos : ", cp
+	Escribir "Negativos : ", cn
+	Escribir "Ceros : ", cz
+	Escribir "La suma de los numeros es ", s
+	Escribir "Fin del proceso"
+	
+FinAlgoritmo

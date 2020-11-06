@@ -1,0 +1,22 @@
+// Tarea 4 - Ejemplo 12 . Convetir pesos a dolares
+// Carlos Castaneda Ramirez
+// 2 de septiembre 2020
+
+Algoritmo convetir_a_dolares
+	definir pesos,dolares como real
+	definir cotiza como real
+	
+	//cotiza = 21.74
+	
+	escribir "Programa que convierte pesos a dolares"
+	escribir "Dame los pesos "
+	leer pesos
+	escribir "Dame la cotiazacion del dolar "
+	leer cotiza
+		
+	dolares = pesos / cotiza
+	
+	escribir pesos " peso(s), equivale a ", dolares, " dolare(s)"
+	
+	
+FinAlgoritmo

@@ -1,0 +1,45 @@
+// El usuario introduce 5 numeros en cada arreglo (A, B), luego se multplica invertido y se guarda en C
+// Carlos Castaneda R
+// 4 Noviembre 2020
+
+// Recibe como paramentro un arreglo X y lo Imprime
+Funcion Imprime(X)
+	Definir i Como Entero
+	Para i=1 Hasta 5 Hacer
+		Escribir X[i]
+	FinPara
+FinFuncion
+
+// Recibe como parametro un arreglo X y le pide al usuario que lo llene
+Funcion LlenaUsuario(X)
+	Definir i Como Entero
+	Para i=1 Hasta 5 Hacer
+		Escribir "X[",i,"]= " Sin Saltar
+		Leer X[i]  
+	FinPara
+FinFuncion
+
+Algoritmo InvierteArreglo
+	Definir A, B, C, i Como Entero
+	Dimension A[5], B[5], C[5]
+	
+	// Llenar los arreglos con numeros aleatorios
+	Escribir "Dame los elementos de A:"
+	LlenaUsuario(A)
+	Escribir "Dame los elementos de B:"
+	LlenaUsuario(B)
+	
+	// Pone el primer elemento de A en la ultima posicion de B y asi sucesivamente
+	Para i=1 Hasta 5 Hacer
+		C[i] = A[i] * B[(5-i)+1]
+	FinPara
+	
+	// Imprime los arreglos ya llenos con numeros aleatorios
+	Escribir "Los elementos aleatorios de A son:"
+	Imprime(A)
+	Escribir "Los elementos aleatorios de B son:"
+	Imprime(B)
+	Escribir "La multiplicacion invertida de A y B en C es:"
+	Imprime(C)
+	
+FinAlgoritmo

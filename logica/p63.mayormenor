@@ -1,0 +1,78 @@
+// Busca un numero en un arreglo de n numeros introducidos por el usuario
+// Carlos Castaneda Ramirez
+// 28 de Octubre de 2020
+
+Algoritmo MayorMenor
+	Definir op,nums,MAX,n,i, num, may,men Como Entero
+	Definir resp Como Caracter
+	MAX=50
+	Dimension nums[MAX]
+	n=0
+		
+	Repetir
+		Limpiar Pantalla
+		Escribir "[1] Leer elementos del arreglo"
+		Escribir "[2] Mostrar elementos del arreglo"
+		Escribir "[3] Encontrar elemento mayor"
+		Escribir "[4] Encontrar el menor"
+		Escribir "[5] Salir"
+		Leer op
+		Segun op Hacer
+			Caso 1: 	
+				Escribir "Leer los elementos del arreglo"
+				Escribir "Cuantos elementos deseas ? "; Leer n
+				Si n>MAX Entonces
+					Escribir "No tengo capacidad para tanto numero, el maximo es ", MAX
+				SiNo
+					Para i=1 Hasta n
+						Escribir Sin Saltar "Valor ", i
+						Leer nums[i]
+					FinPara
+				Fin Si
+			Caso 2:
+				Escribir "Los elementos del arreglo son:"
+				Si n=0 Entonces
+					Escribir "El arreglo no tiene valores"
+				SiNo
+					Para i=1 Hasta n
+						Escribir Sin Saltar "Valor ", i, ":  "
+						Escribir nums[i]
+					FinPara
+				Fin Si
+				Escribir "Presiona <Enter> para continuar"; Leer resp
+			Caso 3:
+				Escribir "Buscando el elemento mayor en el arreglo"
+				Si n=0 Entonces
+					Escribir "El arreglo no tiene elementos"
+				SiNo
+					may=nums[1]
+					Para i=1 Hasta n
+						Si nums[i] > may Entonces
+							may=nums[i]
+						FinSi
+					FinPara
+					Escribir "El mayor es : ", may
+				Fin Si
+				Escribir "Presiona <Enter> para continuar"; Leer resp
+			Caso 4:
+				Escribir "Buscando el elemento menor en el arreglo"
+				Si n=0 Entonces
+					Escribir "El arreglo no tiene elementos"
+				SiNo
+					men=nums[1]
+					Para i=1 Hasta n
+						Si nums[i] < men Entonces
+							men=nums[i]
+						FinSi
+					FinPara
+					Escribir "El menor es : ", men
+				Fin Si
+				Escribir "Presiona <Enter> para continuar"; Leer resp
+			Caso 5:
+				Escribir "Gracias por utilizar nuestro sistema"
+			De Otro Modo: 
+				Escribir "Opción Invalida .."
+		FinSegun
+	Hasta Que op=5
+	
+FinAlgoritmo

@@ -1,0 +1,29 @@
+// Suma las temperaturas en un arreglo de numeros reales
+// Carlos Castañeda Ramírez
+// 28 de Octubre de 2020
+
+Algoritmo Temperaturas
+	Definir temps, suma Como Real
+	Dimension temps[9]
+	Definir i Como Entero
+	
+	// Inicializamos el arreglo con valores inciales
+	temps[1]=2.34 
+	temps[2]=4.56 
+	temps[3]=7.89 
+	temps[4]=0.5 
+	temps[5]=2.5 
+	temps[6]=4.67 
+	temps[7]=40.3 
+	temps[8]=22.35 
+	temps[9]=56.22
+	
+	// Imprimir el arreglo y calcular la suma de sus elementos
+	Para i=1 Hasta 9 Hacer
+		Escribir temps[i]
+		suma = suma + temps[i]
+	FinPara
+	
+	Escribir "La suma de las temperaturas es: ", suma
+
+FinAlgoritmo

@@ -1,0 +1,15 @@
+// Imprime los numeros del 100 al 1, usando : mientras
+// Carlos Castaneda R
+// 5 de Octubre de 2020
+
+Algoritmo imprime100a1
+	Definir n Como Entero
+	
+	Escribir "Imprimiendor del 100 a 1"
+	n=100
+	Mientras n>=1 Hacer
+		Escribir n
+		n = n - 1
+	Fin Mientras
+	Escribir " Fin del proceso .."
+FinAlgoritmo

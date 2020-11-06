@@ -1,0 +1,26 @@
+// Imprime la tabla de multiplicar que el usuario decida
+// Carlos Castaneda Ramirez
+// 7 de Octubre de 2020
+
+Algoritmo Tablas
+	Definir t,c Como Entero
+	Definir r Como Caracter
+	
+	Repetir
+		Limpiar Pantalla
+		Escribir "Programa que imprime la tabla de multiplicar qu el usuario decida "
+		Escribir "Que tabla quieres ? "
+		Leer t
+		c=1
+		Mientras c<=10 Hacer
+			Escribir t, " x ", c, " = ", t * c
+			c =  c + 1
+		FinMientras
+		Escribir "Deseas otra tabla (S/N)?"
+		Leer r  
+		r=Mayusculas(r)
+	Hasta Que r="N"
+	Escribir "Proceso Terminado"
+	
+	
+FinAlgoritmo

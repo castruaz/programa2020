@@ -1,0 +1,18 @@
+// Tarea 4 - Ejemplo 9 . Convertir temperatura
+// Carlos Castaneda Ramirez
+// 2 de septiembre 2020
+
+Algoritmo convertir_temperatura
+	Definir farenheit, celsius Como Real
+	
+	Escribir "Programa que convierte grados farenheit a grados celsius"
+	Escribir "Dame la temperatura en grados farenheit "
+	Leer farenheit
+	
+	celsius = ( farenheit - 32 ) * 5 / 9 
+	
+	Escribir "La temperatura ", farenheit, " grados farenheit"
+	Escribir "Equivale a ", celsius, " grados celsius"
+	
+	Escribir "Gracias por utilizar este programa"
+FinAlgoritmo

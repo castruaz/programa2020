@@ -1,0 +1,34 @@
+// Calcula el promedio de n calificaciones introducidas por el usuario
+// Carrlos Castaneda R
+// 21 de Octubre de 2020
+
+Algoritmo PromedioCalificaciones
+	Definir cals, suma, promedio Como Real
+	Definir MAX, i, n Como Entero
+	MAX = 100
+	Dimension cals[MAX]
+ 	
+	// Leer los valores por teclado
+	Escribir "Calcula el promedio de n calificaciones "
+	Escribir "Cuantas calificaciones deseas procesar ? "; Leer n
+	Si n<=MAX Entonces
+		Para i=1 Hasta n Con Paso 1 Hacer
+			Escribir Sin Saltar "cals[",i,"] = "
+			Leer cals[i]
+		FinPara
+	SiNo
+		Escribir "El tamaño máximo se ha excedido"
+	FinSi
+	
+	// Imprimir los elementos  y calcular su suma
+	Escribir "Los elementos del arreglo son: "
+	Para i=1 Hasta n Con Paso 1 Hacer
+		Escribir "cals[",i,"] = ", cals[i]
+		suma = suma + cals[i]
+	FinPara
+	
+	promedio = suma / n
+	Escribir "La suma de las calificaciones es     ", suma
+	Escribir "El promedio de las calificaciones es ", promedio
+	Escribir "Proceso terminado "
+FinAlgoritmo

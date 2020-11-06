@@ -1,0 +1,39 @@
+// Genera un arreglo de numeros aleatorios, los invierte y guarda en otro arreglo
+// Carlos Castaneda R
+// 4 Noviembre 2020
+
+// Recibe como paramentro un arreglo X y lo Imprime
+Funcion Imprime(X)
+	Definir i Como Entero
+	Para i=1 Hasta 10 Hacer
+		Escribir X[i]
+	FinPara
+FinFuncion
+
+// Recibe como parametro un arreglo X y lo rellena con numeros aleatorios
+Funcion LlenaAleatorio(X)
+	Definir i Como Entero
+	Para i=1 Hasta 10 Hacer
+		X[i] = Aleatorio(1,100)
+	FinPara
+FinFuncion
+
+Algoritmo InvierteArreglo
+	Definir A, B,i Como Entero
+	Dimension A[10], B[10]
+	
+	// Llenar los arreglos con numeros aleatorios
+	LlenaAleatorio(A)
+	
+	// Pone el primer elemento de A en la ultima posicion de B y asi sucesivamente
+	Para i=1 Hasta 10 Hacer
+		B[i] =  A[(10-i)+1]
+	FinPara
+	
+	// Imprime los arreglos ya llenos con numeros aleatorios
+	Escribir "Los elementos aleatorios de A son:"
+	Imprime(A)
+	Escribir "Los elementos aleatorios de A elevados al cubo y guardados en B son:"
+	Imprime(B)
+	
+FinAlgoritmo

@@ -1,0 +1,30 @@
+// Imprime un cuadro de r x c asteriscos
+// Carlos Castaneda R
+// 12 de octubre de 2020
+
+Funcion Cuadro(r,c,x)
+	Definir i, j Como Entero
+	Para i=1 Hasta r Hacer
+		Para j=1 hasta c Hacer
+			Escribir Sin Saltar x
+		FinPara
+		Escribir ""
+	FinPara
+FinFuncion
+
+
+Algoritmo Cuadrorc
+	Definir resp,x Como Caracter
+	Definir r,c Como Entero
+	
+	Repetir
+		Limpiar Pantalla
+		Escribir "Imprime un cuadro de r x c del caracter deseado"
+		Escribir "Dame los renglones "; Leer r
+		Escribir "Dame las columnas  "; Leer c
+		Escribir "De que caracter    "; Leer x
+		Cuadro(r,c,x)
+		Escribir "Deseas otra figura (S/N)"; Leer resp
+	Hasta Que Mayusculas(resp)="N" 
+	
+FinAlgoritmo

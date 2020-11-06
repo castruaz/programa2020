@@ -1,0 +1,63 @@
+// Busca un numero en un arreglo de n numeros introducidos por el usuario
+// Carlos Castaneda Ramirez
+// 28 de Octubre de 2020
+
+
+Algoritmo BuscarElemento
+	Definir op,nums,MAX,n,i, num Como Entero
+	Definir resp Como Caracter
+	MAX=50
+	Dimension nums[MAX]
+	n=0
+		
+	Repetir
+		Limpiar Pantalla
+		Escribir "[1] Leer elementos del arreglo"
+		Escribir "[2] Mostrar elementos del arreglo"
+		Escribir "[3] Buscar elemento en el arreglo"
+		Escribir "[4] Salir"
+		Leer op
+		Segun op Hacer
+			Caso 1: 	
+				Escribir "Leer los elementos del arreglo"
+				Escribir "Cuantos elementos deseas ? "; Leer n
+				Si n>MAX Entonces
+					Escribir "No tengo capacidad para tanto numero, el maximo es ", MAX
+				SiNo
+					Para i=1 Hasta n
+						Escribir Sin Saltar "Valor ", i
+						Leer nums[i]
+					FinPara
+				Fin Si
+			Caso 2:
+				Escribir "Los elementos del arreglo son:"
+				Si n=0 Entonces
+					Escribir "El arreglo no tiene valores"
+				SiNo
+					Para i=1 Hasta n
+						Escribir Sin Saltar "Valor ", i, ":  "
+						Escribir nums[i]
+					FinPara
+				Fin Si
+				Escribir "Presiona <Enter> para continuar"; Leer resp
+			Caso 3:
+				Escribir "Buscando un elemento en el arreglo"
+				Si n=0 Entonces
+					Escribir "El arreglo no tiene elementos"
+				SiNo
+					Escribir "Dame el numero a buscar"; Leer num
+					Para i=1 Hasta n
+						Si num = nums[i] Entonces
+							Escribir "Elemento encontrado, en la posición", i
+						FinSi
+					FinPara
+				Fin Si
+				Escribir "Presiona <Enter> para continuar"; Leer resp
+			Caso 4:
+				Escribir "Gracias por utilizar nuestro sistema"
+			De Otro Modo: 
+				Escribir "Opción Invalida .."
+		FinSegun
+	Hasta Que op=4
+	
+FinAlgoritmo

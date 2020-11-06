@@ -1,0 +1,44 @@
+// Calcular el area de un circulo y un triangulo usando funciones
+// Carlos Castaneda Ramirez
+// 30 de Septiembre de 2020
+
+Funcion a <- AreaCirculo(radio)
+	Definir a Como Real
+	a = PI * radio * radio
+FinFuncion
+
+Funcion a <- AreaTriangulo(base, altura)
+	Definir a Como Real
+	a = ( base * altura ) / 2
+FinFuncion
+
+Algoritmo areas
+	Definir op Como Caracter
+	Definir area, radio, base, altura Como Real
+	
+	Escribir "--------------------------------------------------------------"
+	Escribir "Calcular el area de un circulo y un triangulo usando funciones"
+	Escribir "--------------------------------------------------------------"
+	Escribir " [ C ] Calcular el área de un círculo                         "
+	Escribir " [ T ] Calcular el área de un triángulo                       "
+	Escribir "--------------------------------------------------------------"
+	Escribir "Elige una opción ?"
+	Leer op
+	op = Mayusculas(op)
+	
+	Segun op Hacer
+		"C": Escribir "Calcuando el área de un círculo"
+			Escribir "Dame el radio "; Leer radio
+			area = AreaCirculo(radio)
+			Escribir "El área de círculo es", area
+			
+		"T": Escribir "Calculando el área de un triángulo"
+			Escribir "Dame el base   "; Leer base
+			Escribir "Dame la altura "; Leer altura
+			area = AreaTriangulo(base, altura)
+			Escribir "El área del triángulo es ", area
+		De otro modo: 
+			Escribir "Elegiste una opción invalida"
+	FinSegun
+FinAlgoritmo
+ 

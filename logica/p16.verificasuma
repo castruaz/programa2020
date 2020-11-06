@@ -1,0 +1,18 @@
+// verifica si la suma de 2 numeros es igual al 3ero
+// Carlos Castaneda Ramirez
+// 9 Septiembre 2020
+
+Algoritmo verifica_suma
+	Definir n1, n2, n3 Como Entero
+	
+	Escribir "Numero 1 ? "; Leer n1
+	Escribir "Numero 2 ? "; Leer n2
+	Escribir "Numero 3 ? "; Leer n3
+	
+	Si (n1 + n2) = n3 Entonces
+		Escribir n1, " + ", n2, " = ", n3
+	SiNo
+		Escribir "no son iguales"
+	FinSi
+		
+FinAlgoritmo

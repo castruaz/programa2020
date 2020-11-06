@@ -1,0 +1,29 @@
+// Calcula el menor de 3 numeros usando una Funcion 
+// Carlos Castaneda
+// 30 de septiembre de 2020
+
+Funcion m <- Menor(n1,n2,n3)
+	Definir m Como Entero
+	Si n1<n2 Y n1<n3
+		m = n1
+	FinSi
+	Si n2<n1 Y n2<n3
+		m = n2
+	FinSi
+	Si n3<n1 Y n3<n2
+		m = n3
+	FinSi
+FinFuncion
+
+Algoritmo calcular_menor
+	Definir n1, n2, n3 Como Entero
+	Definir m Como Entero
+	
+	Escribir "Calcula el menor de 3 numeros usando una Funcion"
+	Escribir "Numero 1 : "; Leer n1
+	Escribir "Numero 2 : "; Leer n2
+	Escribir "Numero 3 : "; Leer n3
+	
+	m = Menor(n1, n2, n3)
+	Escribir "El menor es ", m
+FinAlgoritmo

@@ -1,0 +1,35 @@
+// Devuelve una letra en base a una calificacion numerica
+// Carlos Castaneda Ramirez
+// 30 de Septiembre 2020
+
+Funcion l <- CalifLetra(cal)
+	Definir l Como Caracter
+	
+	Si cal>=0 Y cal<=59 Entonces
+		l = "F Reprobado"
+	FinSi
+	Si cal>=60 Y cal<=69 Entonces
+		l = "D Deficiente"
+	FinSi
+	Si cal>=70 Y cal<=79 Entonces
+		l = "C Suficiente"
+	FinSi
+	Si cal>=80 Y cal<=89 Entonces
+		l = "B Bien"
+	FinSi
+	Si cal>=90 Y cal<=100 Entonces
+		l = "A Excelente "
+	FinSi
+FinFuncion
+
+Algoritmo calificacion_letra
+	Definir cal Como Real
+	Definir letra Como Caracter
+	
+	Escribir "Devuelve una letra en base a una calificacion numerica"
+	Escribir "Dame una calificacion numerica entre 0 y 100"
+	Leer cal
+	
+	letra = CalifLetra(cal)
+	Escribir "Tu calificacion con letra es ", letra	
+FinAlgoritmo

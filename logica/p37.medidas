@@ -1,0 +1,41 @@
+// Convertir medidas de longitud 
+// Carlos Castaneda Ramirez
+// 30 Septiembre 2020
+
+Funcion op <- Menu()
+	Definir op Como Entero
+	Limpiar Pantalla
+	Escribir "Convertir medidas de longitud"
+	Escribir "--------------------------------------"
+	Escribir " Pulgadas a Centimetros ........ [ 1 ]"
+	Escribir " Pies a Metros ................. [ 2 ]"
+	Escribir "--------------------------------------"
+	Escribir "Elige  ? "; Leer op
+FinFuncion
+
+Funcion r <-PaC(med)
+	r = med * 2.54
+FinFuncion
+
+Funcion r <- PaM(med)
+	r = med * 3.281
+FinFuncion
+
+Algoritmo medias
+	Definir op Como Entero
+	Definir res, med Como Real
+	op = Menu()
+	Segun op Hacer
+		1: 	Escribir "Convirtiendo de pulgadas a centimetros "
+			Escribir "Dame las pulgadas "; Leer med
+			res = PaC(med)
+			Escribir  "Los centimetros son : ", res
+			
+		2:  Escribir "Convirtiend de pies a metros "
+			Escribir "Dame los pies "; Leer med 
+			res = PaM(med)
+			Escribir "Los metros son: ", res
+		De Otro Modo:
+			Escribir "Opción inválida"
+	FinSegun
+FinAlgoritmo

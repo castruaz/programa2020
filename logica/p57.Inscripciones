@@ -1,0 +1,66 @@
+// Procesa el registro a un curso de programacion de una Universidad
+// Carlos Castaneda Ramirez
+// 19 de Octubre de 2020
+
+SubProceso  Encabezado()
+	Limpiar Pantalla
+	Escribir "-------------------------------------------------------"
+	Escribir "Universidad Patito SA"
+	Escribir "Curso de Tecnicas Avanzadas de Programacion"
+	Escribir "Inscripción de Participantes"
+	Escribir "--------------------------------------------------------"
+	Escribir ""
+FinSubProceso
+
+
+Algoritmo Inscripciones
+	Definir resp, nombre, tipo Como Caracter
+	Definir edad, ta, td, tt, totpar, sedad  Como Entero
+	Definir da, dd, dt, totdir Como Entero
+	Definir pedad Como Real
+	
+	Repetir
+		Encabezado()
+		Escribir "Dame el nombre :"; Leer nombre
+		Escribir "Dame la edad   :"; Leer edad 
+		Si edad<18 Entonces
+			Escribir "No se puede procesar la inscripción: ERES MENOR DE EDAD"
+		SiNo
+			sedad = sedad + edad
+			Escribir "Tipo de participante: (A)lumno: $50    (D)ocente: $80    (T)rabajador: $60"; Leer tipo; 
+			tipo=Mayusculas(tipo)
+			Segun tipo Hacer
+				"A":	ta = ta + 1
+					da = da + 50
+				"D":	td = td + 1
+					dd = dd + 80
+				"T":	tt = tt + 1
+					dt = dt + 60
+			FinSegun
+		FinSi
+		Escribir "Deseas inscribir otro participante (S/N) ?"; Leer resp
+		resp = Mayusculas(resp)
+	Hasta Que resp="N"
+	// Calculos finales
+	totpar = ta + td + tt
+	pedad  = sedad / totpar
+	totdir = da + dd + dt
+	
+	// Resumen de participantes
+	Escribir "-------------------------------------------------"
+	Escribir "Alumnos 		: ", ta
+	Escribir "Docentes		: ", td
+	Escribir "Trabajadores		: ", tt
+	Escribir "Tota de Part		: ", totpar
+	Escribir "Promedio edad	: ", pedad
+	
+	//Resumen de Dinero
+	Escribir "-------------------------------------------------"
+	Escribir "Dinero Alumnos 		: ", da
+	Escribir "Dinero Docentes		: ", dd
+	Escribir "Dinero Trabajadores	: ", dt
+	Escribir "Tota de Dinero		: ", totdir
+ 
+	Escribir " Proceso terminado ... Gracias ..."
+	
+FinAlgoritmo

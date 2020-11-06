@@ -1,0 +1,20 @@
+// Calcula el promedio de n numeros hasta que se introduce 0
+// Carlos Castaneda
+// 7 de Octubre de 2020
+
+Algoritmo Promedio
+	Definir n, s, p, c Como Entero
+	
+	Escribir "Calcula el promedio de n numeros hasta que se introduce 0"
+	Repetir
+		Escribir "Dame un numero ?"; Leer n
+		s = s + n
+		c = c + 1
+	Hasta Que n = 0
+	Escribir "Se introdujeron :", c-1
+	Escribir "La suma es      :", s
+	p = s / (c-1)
+	Escribir "El promedio     :", p
+	
+	
+FinAlgoritmo

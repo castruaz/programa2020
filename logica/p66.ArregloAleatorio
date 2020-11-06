@@ -1,0 +1,35 @@
+// Genera e Imprime un arreglo de numeros aleatorios
+// Carlos Castaneda R
+// 4 Noviembre 2020
+
+// Recibe como paramentro un arreglo X y lo Imprime
+Funcion Imprime(X)
+	Definir i Como Entero
+	Para i=1 Hasta 10 Hacer
+		Escribir X[i]
+	FinPara
+FinFuncion
+
+// Recibe como parametro un arreglo X y lo rellena con numeros aleatorios
+Funcion LlenaAleatorio(X)
+	Definir i Como Entero
+	Para i=1 Hasta 10 Hacer
+		X[i] = Aleatorio(1,100)
+	FinPara
+FinFuncion
+
+Algoritmo ImprimeArreglo
+	Definir A, B Como Entero
+	Dimension A[10], B[10]
+	
+	// Llenar los arreglos con numeros aleatorios
+	LlenaAleatorio(A)
+	LlenaAleatorio(B)
+	
+	// Imprime los arreglos ya llenos con numeros aleatorios
+	Escribir "Los elementos aleatorios de A son:"
+	Imprime(A)
+	Escribir "Los elementos aleatorios de B son:"
+	Imprime(B)
+	
+FinAlgoritmo

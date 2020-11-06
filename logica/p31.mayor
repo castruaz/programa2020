@@ -1,0 +1,30 @@
+// Algoritmo que calcula el mayor de 3 numeros usando una funcion
+// Carlos Castañeda Ramirez
+// 28 Septiembre 2020
+
+Funcion m <- Mayor(n1, n2, n3)
+	Definir m Como Entero
+	Si n1>n2 Y n1>n3 Entonces
+		m = n1
+	FinSi
+	Si n2>n1 Y n2>n3 Entonces
+		m = n2
+	FinSi
+	Si n3>n2 Y n3>n2 Entonces
+		m = n3
+	FinSi
+FinFuncion
+
+Algoritmo numero_mayor
+	Definir n1, n2, n3 Como Entero
+	Definir m Como Entero 
+	Escribir "Calcula el mayor de 3 numeros"
+	Escribir "Dame el numero 1"; Leer n1
+	Escribir "Dame el numero 2"; Leer n2
+	Escribir "Dame el numero 3"; Leer n3
+	
+	m = Mayor(n1,n2,n3)
+	
+	Escribir "El mayor de los 3 numeros es ", m
+
+FinAlgoritmo

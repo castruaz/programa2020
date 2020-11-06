@@ -1,0 +1,26 @@
+// Calula la conjetura de Collatz
+// Carlos Castaneda Ramirez
+// 14 de Octubre de 2020
+
+Algoritmo conjeturacollatz
+	Definir resp Como Caracter
+	Definir n, i Como Entero
+	 
+	Repetir
+		Limpiar Pantalla
+		Escribir "Calcular la Conjetura de Collatz"
+		Escribir "Dame un numero ? "; Leer n
+		Repetir
+			Escribir Sin Saltar n," "
+			Si n mod 2 = 0 Entonces
+				n = n / 2
+			SiNo
+				n = (n * 3) + 1
+			FinSi
+		Hasta Que n = 1 
+		Escribir n
+		Escribir ""
+		Escribir "Deseas Continuar (S/N)"; Leer resp
+	Hasta Que Mayusculas(resp)="N" 
+	Escribir "Proceso terminado ........"
+FinAlgoritmo
