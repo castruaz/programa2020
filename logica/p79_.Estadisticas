@@ -1,0 +1,133 @@
+// Algoritmo estadístico 
+
+Funcion  LeerNums(a,n) 
+	Definir i Como Entero
+	Para i=1  Hasta n  Hacer  
+		Escribir Sin Saltar "Numero :", i
+		Leer a[i]
+	FinPara
+FinFuncion
+
+Funcion imprime(a, n) 
+	Definir i Como Entero
+	Para i=1  Hasta n  Hacer  
+		Escribir Sin Saltar a[i], " "
+	FinPara
+FinFuncion
+
+Funcion m <- mayor(a, n) 
+	Definir m Como Real
+	Definir i Como Entero
+	m=a[1]
+	Para  i=1  Hasta n  Hacer 
+		Si a[i]>m Entonces
+			m=a[i]
+		FinSi
+	FinPara
+FinFuncion
+
+Funcion m <- menor(a, n) 
+	Definir m Como Real
+	Definir i Como Entero
+	m=a[1]
+	Para  i=1  Hasta n  Hacer 
+		Si a[i]<m Entonces
+			m=a[i]
+		FinSi
+	FinPara
+FinFuncion
+ 
+Funcion m <- media(a, n) 
+	Definir m,s Como Real 
+	Definir i Como Entero
+	s=0
+	Para i=1  Hasta n  Hacer 
+		s = s + a[i]
+	FinPara
+	 m= s/n
+FinFuncion
+
+Funcion v <- varianza(a, m, n) 
+	Definir v,s Como Real 
+	Definir i Como Entero
+	s=0
+	Para i=1  Hasta n  Hacer 
+		s = s + (a[i] - m) ^ 2
+	FinPara
+	v = s / n
+FinFuncion
+
+Funcion op <- menu()
+	Definir op Como Entero
+	Escribir "--------------------------------------------------"
+	Escribir "Calculos estadísticos sobre un arreglo de números "
+	Escribir "--------------------------------------------------"
+	Escribir "Leer los elementos en el arreglo.............[ 1 ]"
+	Escribir "Mostrar los elementos en el arreglo..........[ 2 ]"
+	Escribir "Calcular y mostrar estadisticas..............[ 3 ]"
+	Escribir "Salir.....................................[ 4 ]"
+	Escribir "--------------------------------------------------"
+	Escribir "Elije ? "; Leer op
+Fin Funcion
+
+Algoritmo Estaditicas 
+	Definir op, n Como Entero
+	Definir nums Como Real
+	Definir med, var, may, men  Como Real
+	Definir MAX Como Entero
+	MAX=10
+	Dimension nums[MAX] 
+	
+	Repetir 
+		op = menu()
+		Segun(op) 
+			Caso  1:	Escribir "Leyendo los elementos del arreglo "
+					Escribir "Cuantos numeros deseas procesar ?"; Leer n
+					LeerNums(nums,n)
+					Escribir ""
+				
+			Caso  2:	Escribir "Los elementos del arrelo son: "
+					imprime(nums,n)
+					Escribir ""
+				
+			Caso  3: Escribir "Las estadisticas son: "
+					may = mayor(nums,n)
+					men = menor(nums,n)
+					med = media(nums,n)
+					var = varianza(nums,med,n)
+					Escribir "El elemento mayor es      : ", may
+					Escribir "El elemento menor es      : ", men
+					Escribir "El promedio es            : ", med
+					Escribir "La varianza  es           : ", var
+					Escribir "La desviación estandar es : ", rc(var)
+					Escribir ""
+		
+			Caso  4: Escribir "Gracias por utilizar el sistema, adios "
+				
+			De Otro Modo: Escribir "Opción Inválida" 
+		FinSegun
+	Hasta Que (op = 4)
+ 
+FinAlgoritmo
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+

@@ -1,0 +1,118 @@
+// Genera estadísticas con números
+// Carlos Castañeda Ramírez
+// 9 de Noviembre de 2020
+Funcion op <- Menu()
+	Definir op Como Entero
+	Limpiar Pantalla
+	Escribir "---------------------------------------------------"
+	Escribir "Calculos estadísticos sobre un arreglo de números "
+	Escribir "---------------------------------------------------"
+	Escribir "Leer los elementos en el arreglo de números ..[ 1 ]"
+	Escribir "Mostrar los elementos en el arreglo ..........[ 2 ]"
+	Escribir "Calcular y mostrar las estadísticas ..........[ 3 ]"
+	Escribir "Salir ........................................[ 4 ]"
+	Leer op
+FinFuncion
+
+Funcion LeerNumeros(A, n)
+	Definir i Como Entero
+	Para i=1 Hasta n Hacer
+		Escribir Sin Saltar "Numero : ", i
+		Leer A[i]
+	FinPara
+FinFuncion
+
+Funcion ImprimeNumeros(A, n)
+	Definir i Como Entero
+	Para i=1 Hasta n Hacer
+		Escribir A[i]
+	FinPara
+FinFuncion
+
+Funcion may <- Mayor(A, n)
+	Definir may Como Real
+	Definir i Como Entero
+	may = A[1]
+	Para i=1 Hasta n Hacer
+		Si A[i]>may Entonces
+			may = A[i]
+		FinSi
+	FinPara
+FinFuncion
+
+Funcion men <- Menor(A, n)
+	Definir men Como Real
+	Definir i Como Entero
+	men = A[1]
+	Para i=1 Hasta n Hacer
+		Si A[i]<men Entonces
+			men = A[i]
+		FinSi
+	FinPara
+FinFuncion
+
+Funcion med <- Media(A, n)
+	Definir med,suma Como Real
+	Definir i Como Entero
+	suma=0
+	Para i=1 Hasta n Hacer
+		suma = suma + A[i]
+	FinPara
+	med = suma / n
+FinFuncion
+
+Funcion var <- Varianza(A, m, n)
+	Definir var,suma Como Real
+	Definir i Como Entero
+	suma=0
+	Para i=1 Hasta n Hacer
+		suma =  suma + (A[i] - m) ^ 2
+	FinPara
+	var = suma / n
+FinFuncion
+
+
+Algoritmo Estadisticas
+	Definir op,MAX,n Como Entero
+	Definir nums, may, men, med, var, des Como Real
+	MAX=50
+	Dimension nums[50]
+	n=0
+	Repetir
+		op = Menu()
+		Segun(op) Hacer
+			Caso 1: 	Escribir "Leyendo números en el arreglo  "
+					Escribir "Cuantos elementos ? "; Leer n
+					Si n<=MAX Entonces
+						LeerNumeros(nums,n)
+						Esperar Tecla
+					SiNo
+						Escribir "No tengo capacidad para almacenar los numeros que me pides"
+					FinSi
+					
+			Caso 2:	Escribir "Los elementos del arreglo son: "
+					Si n<>0 Entonces
+						ImprimeNumeros(nums,n)
+						Esperar Tecla
+					SiNo
+						Escribir "El arreglo no tiene números aún"
+					FinSI
+					
+			Caso 3: 	Escribir "Las estadisticas en base a los números del arreglo son: "
+					may = Mayor(nums,n)
+					men = Menor(nums,n)
+					med = Media(nums,n)
+					var = Varianza(nums,med,n)
+					des = rc(var)
+					Escribir "El elemento mayor es        ", may
+					Escribir "El elemento menor es        ", men
+					Escribir "La media es                 ", med
+					Escribir "La varianza es              ", var
+					Escribir "La desviacion estandar es   ", des
+					Esperar Tecla
+			Caso 4: Escribir ".... Gracias por usar este sistema, adios ..."
+			De Otro Modo:
+				Escribir "Opción Invalida"
+		FinSegun
+	Hasta Que op=4
+FinAlgoritmo
